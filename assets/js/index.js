@@ -7,7 +7,8 @@ getMarvelData(offset);
 
 window.addEventListener('scroll', () =>{
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        
+        offset += 20;
+        getMarvelData(offset);
     }
 })
 // 
